@@ -1,0 +1,153 @@
+ // Bourbon & Neat
+@import '../bower_components/bourbon/dist/bourbon';
+
+// Custom Styles
+@import url(http://fonts.googleapis.com/css?family=Average+Sans);
+
+
+* { @include box-sizing(border-box); }
+
+$min-width          :  em(320);
+$full-width         :  em(970);
+$max-width          :  em(970);
+
+$primary-font       :  'Average Sans',"Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
+
+$primary-color      :  #615e5f;
+$secondary-color    :  #c1d831;
+$main-text-color    :  #000000;
+
+
+body {
+
+
+@media only screen and (min-width : $min-width) {
+  background: #fff;
+  font-family: $primary-font;
+  color: $main-text-color;
+
+  h1 {
+      font-family: $primary-font;
+      font-size: 2.5em;
+      font-weight: normal;
+      color: $primary-color;
+      display: block;
+      margin: 0;
+
+    }
+
+  h2 {
+      font-family: $primary-font;
+      letter-spacing: .18em;
+      font-size: 1.3em;
+      -webkit-margin-before: 0.0;
+      -webkit-margin-after: 0.0;
+      padding: 10px 2px 10px 2px;
+      text-align: left;
+      color: $primary-color;
+  }
+
+  h3 {
+    font-weight: normal;
+    font-family: $primary-font;
+  }
+
+  p {
+    webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+  }
+
+  header {
+    height:100px;
+    #logo-container {
+      background: url(http://www.practichem.com/images/PractichemMenuLogo.png)50% 20px no-repeat;
+      height: 100%;
+    }
+    background-color: #FFF;
+  }
+
+  .main-container {
+    margin: 0 auto 0 auto;
+    width: 100%;
+      @media only screen and (min-width : $full-width) {
+        max-width: $max-width;
+      }
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 30px;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 60px;
+    h1 {
+      font-size: 60px;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+    form {
+      fieldset {
+        border: 2px solid $secondary-color;
+        margin-bottom: 20px;
+        ul {
+          margin: 20px 0px 15px 0;
+          padding-top: 0px;
+          li {
+            list-style: none;
+            margin-bottom: 12px;
+            font-size: 18px;
+            -webkit-margin-before: 1em;
+            -webkit-margin-after: 1em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            input {
+              height: 30px;
+              width: 200px;
+              padding: 5px;
+              font-size: 0.8em;
+            }
+            span.error-msg {
+              padding: 0 10px 0 10px;
+              font-size: 0.8em;
+              color: $primary-color;
+            }
+          }
+        }
+        .submit {
+          margin-left: 40px;
+          background-color: $secondary-color;
+          padding: 10px 15px;
+          font-size: 1.0em;
+        }
+      }
+    }
+
+
+  section#registrationStats {
+    display: none;
+    .regStat {
+      border: 2px solid $secondary-color;
+      -webkit-margin-start: 2px;
+      -webkit-margin-end: 2px;
+      -webkit-padding-before: 0.35em;
+      -webkit-padding-start: 0.75em;
+      -webkit-padding-end: 0.75em;
+      -webkit-padding-after: 0.625em;
+      margin-bottom: 20px;
+      .results {
+        -webkit-margin-before: 0em;
+        -webkit-margin-after: 0em;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+        padding: 20px 0 10px 40px;
+        p {
+          -webkit-margin-before: 0em;
+        }
+      }
+    }
+  }
+
+}
+
+}
+}
