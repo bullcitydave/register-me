@@ -1,0 +1,53 @@
+<form id="registration" action="#" method="post">
+      <h1>Welcome</h1>
+      <h3>We are delighted that you are requesting an account! Soon, you will be able to control scientific instruments from your web browser. Most any device, anywhere, anytime!</h3>
+      <div class="set">
+        <fieldset>
+          <h2>Account Information</h2>
+          <ul class="fields">
+            <li>
+              <div class="holder">
+                <label class="required" for="fname">Username</label>
+              </div> <input name="username" type="text" class="txt" id="username" placeholder="Required"  required value="" />
+              <span class="error-msg"></span>
+            </li>
+
+            <li>
+              <div class="holder">
+                <label class="required" for="email">Email</label>
+              </div> <input name="email" type="email" placeholder="Required"  required class="txt" id="email" />
+              <span class="error-msg"></span>
+            </li>
+            <li>
+              <div class="holder">
+                <label class="required" for="password">Password</label> </div>
+                 <input name="password" type="password" placeholder="Minimum 8 characters"  required class="txt" id="password"
+              value="" />
+              <span class="error-msg">Include at least 1 uppercase letter, 1 lowercase letter, and 1 digit</span>
+            </li>
+            <li>
+              <div class="holder">
+                <label class="required" for="confirm-password">Confirm Password</label>
+              </div> <input name="passwordConfirm" type="password" class="txt" id="confirm-password" value="" />
+              <span class="error-msg"></span>
+            </li>
+          </ul>
+          <input type="submit" class="submit" value="Submit" />
+        </fieldset>
+    </div>
+</form>
+
+<section id = "registrationStats">
+  <div class="regStat" id="userCharCount">
+    <h2>User Character Count</h2>
+    <div class="results">
+      <!-- Display a count of the letters in the user name.  For example: Khawar would result in: a=2, K=1, h=1, w=1, r=1 -->
+    </div>
+  </div>
+  <div class="regStat" id="regHistory">
+    <h2>Registration History</h2>
+    <div class="results">
+      <!-- Display list of users who have just registered -->
+    </div>
+  </div>
+</section>
